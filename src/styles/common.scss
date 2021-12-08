@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(41, 36, 36);
+  color: #fff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@for $i from 1 through 100 {
+  $width: $i * 10;
+  .wp-#{$width} {
+    width: #{$width}px;
+  }
+}
+
+@for $i from 1 through 10 {
+  $padding: $i * 10;
+  .p-#{$padding} {
+    padding: #{$padding}px;
+  }
+  .pl-#{$padding} {
+    padding-left: #{$padding}px;
+  }
+  .pr-#{$padding} {
+    padding-right: #{$padding}px;
+  }
+  .pt-#{$padding} {
+    padding-top: #{$padding}px;
+  }
+  .pb-#{$padding} {
+    padding-bottom: #{$padding}px;
+  }
+}
+
+@for $i from 1 through 10 {
+  $padding: $i * 10;
+  .m-#{$padding} {
+    margin: #{$padding}px;
+  }
+  .ml-#{$padding} {
+    margin-left: #{$padding}px;
+  }
+  .mr-#{$padding} {
+    margin-right: #{$padding}px;
+  }
+  .mt-#{$padding} {
+    margin-top: #{$padding}px;
+  }
+  .mb-#{$padding} {
+    margin-bottom: #{$padding}px;
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  cursor: pointer;
+  transition: all 0.5s ease;
+  :hover {
+    fill: rgba(200, 30, 100, 1) !important;
+  }
+}
